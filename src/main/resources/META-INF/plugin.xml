@@ -1,11 +1,17 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>org.jetbrains.plugins.template</id>
+    <id>com.sbk.krashme</id>
     <name>KrashMe</name>
-    <vendor>JetBrains</vendor>
+    <vendor>SBK</vendor>
     <description><![CDATA[
-        <p><b>IntelliJ Platform Plugin Template</b> is a repository that provides a pure template to make it easier to create a new plugin project.</p>
-        <p>The main goal of this template is to speed up the setup phase of plugin development for both new and experienced developers by preconfiguring the project scaffold and CI, linking to the proper documentation pages, and keeping everything organized.</p>
+        <p><b>KrashMe</b> makes debugging fun by playing funny sounds whenever your code crashes or an execution fails.</p>
+        <p>Features:</p>
+        <ul>
+            <li>Plays funny sounds on unhandled exceptions and non-zero exit codes.</li>
+            <li>Multiple built-in famous Indian Meme Sounds (Faaaa, Raja Gurjar, Oh No No No).</li>
+            <li><b>Random Mode:</b> Get a surprise funny sound every time you crash!</li>
+            <li>Customizable: Provide your own .mp3 or .wav files.</li>
+        </ul>
     ]]></description>
 
     <depends>com.intellij.modules.platform</depends>

@@ -20,7 +20,7 @@ dependencies {
 
 intellijPlatform {
     pluginConfiguration {
-        id = "org.jetbrains.plugins.template"
+        id = "com.sbk.krashme"
         name = "KrashMe"
     }
     buildSearchableOptions = false
