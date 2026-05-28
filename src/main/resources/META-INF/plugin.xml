@@ -20,18 +20,18 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="org.jetbrains.plugins.template.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="org.jetbrains.plugins.template.startup.MyProjectActivity" />
+        <toolWindow factoryClass="com.github.khanco.krashme.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <postStartupActivity implementation="com.github.khanco.krashme.startup.MyProjectActivity" />
         <notificationGroup id="KrashMe" displayType="BALLOON" isLogByDefault="true"/>
 
-        <applicationService serviceImplementation="org.jetbrains.plugins.template.services.PluginSettings"/>
-        <applicationConfigurable instance="org.jetbrains.plugins.template.settings.CrashSoundConfigurable"
+        <applicationService serviceImplementation="com.github.khanco.krashme.services.PluginSettings"/>
+        <applicationConfigurable instance="com.github.khanco.krashme.settings.CrashSoundConfigurable"
                                  displayName="KrashMe"
                                  id="preferences.CrashSound"/>
     </extensions>
 
     <applicationListeners>
-        <listener class="org.jetbrains.plugins.template.listeners.MyExecutionListener"
+        <listener class="com.github.khanco.krashme.listeners.MyExecutionListener"
                   topic="com.intellij.execution.ExecutionListener"/>
     </applicationListeners>
 </idea-plugin>
